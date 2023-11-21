@@ -3,7 +3,7 @@
 	import GithubIcon from '~icons/mdi/github';
 	import LinkedinIcon from '~icons/mdi/linkedin';
 	import MagnifyIcon from '~icons/mdi/magnify';
-	import TwitterIcon from '~icons/mdi/twitter';
+	import WhatsappIcon from '~icons/mdi/whatsapp';
 
 	let open = false;
 
@@ -27,13 +27,17 @@
 
 			<ul class="socials">
 				<li class="social">
-					<a href="/" class="social-link"><TwitterIcon /> </a>
+					<a href="/" class="social-link"><WhatsappIcon /> </a>
 				</li>
 				<li class="social">
-					<a href="/" class="social-link"> <GithubIcon /> </a>
+					<a href="https://github.com/ThomasPais" target="_blank" class="social-link">
+						<GithubIcon />
+					</a>
 				</li>
 				<li class="social">
-					<a href="/" class="social-link"> <LinkedinIcon /></a>
+					<a href="https://www.linkedin.com/in/thomas-pa%C3%AFs/" class="social-link">
+						<LinkedinIcon /></a
+					>
 				</li>
 			</ul>
 			<div class="search"><MagnifyIcon /></div>
@@ -46,10 +50,12 @@
 
 <style>
 	header {
-		height: 64px;
-		margin: 8px 8px 0px 8px;
+		height: 56px;
+		margin: 0 8px 0px 8px;
 		border-radius: 8px;
 		background-color: var(--surface-color);
+		top: 8px;
+		position: sticky;
 	}
 
 	.header-container {
@@ -91,7 +97,7 @@
 
 	.navbar-link {
 		height: 4rem;
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 
 	.socials {
@@ -126,11 +132,15 @@
 	}
 
 	@media only screen and (min-width: 768px) {
+		header {
+			position: relative;
+		}
+
 		.navbar {
 			visibility: visible;
 			position: relative;
 			opacity: 1;
-			transition: none;
+			transition-duration: 0;
 			background: none;
 			display: flex;
 		}
