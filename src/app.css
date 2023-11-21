@@ -1,0 +1,24 @@
+/* normalize.css */
+@import './styles/normalize.css';
+
+/* Color themes */
+@import './styles/themes.css';
+
+body {
+	color: var(--text-color);
+	background-color: var(--surface-dark-color);
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+.container {
+	padding-inline: 32px;
+}
